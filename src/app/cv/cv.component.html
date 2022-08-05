@@ -1,0 +1,118 @@
+<div class="bar"></div>
+
+<section class="head">
+    <article class="title">{{ data.name }}</article>
+    <article class="subtitle">{{ data.currentPosition }}</article>
+</section>
+
+<!-- contact -->
+<div class="category">
+    <div class="name">{{ 'SHARED.CONTACT' | translate }}</div>
+    <div class="content">
+        <section class="contact">
+            <div class="side">
+                <article class="type">
+                    <b>{{ 'SHARED.ADDRESS' | translate }}</b>
+                </article>
+                <article>{{ data.contact.street }} {{ data.contact.houseNumber }}</article>
+                <article>{{ data.contact.zip }} {{ data.contact.city }}</article>
+                <article>{{ data.contact.country }}</article>
+            </div>
+
+            <div class="side">
+                <article class="type">
+                    <b>{{ 'SHARED.CONTACT' | translate }}</b>
+                </article>
+                <aside class="icon-list-item">
+                    <mat-icon>email</mat-icon>
+                    <a href="mailto:{{ data.contact.email }}">{{ data.contact.email }}</a>
+                </aside>
+                <aside class="icon-list-item">
+                    <mat-icon>call</mat-icon>
+                    <span>{{ data.contact.phone }}</span>
+                </aside>
+                <aside class="icon-list-item">
+                    <mat-icon>groups</mat-icon>
+                    <span
+                        >Xing:
+                        <a href="{{ data.contact.xingUrl }}" target="_blank">{{ 'SHARED.LINK' | translate }}</a></span
+                    >
+                </aside>
+                <aside class="icon-list-item">
+                    <mat-icon>groups</mat-icon>
+                    <span
+                        >LinkedIn:
+                        <a href="{{ data.contact.linkedinUrl }}" target="_blank">{{
+                            'SHARED.LINK' | translate
+                        }}</a></span
+                    >
+                </aside>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- jobs -->
+<div class="category">
+    <div class="name">{{ 'SHARED.JOBS_PROJECTS' | translate }}</div>
+    <div class="content">
+        <div class="job" *ngFor="let job of data.jobs">
+            <article class="position">{{ job.title }} @ {{ job.company }}</article>
+
+            <aside class="icon-list-item">
+                <mat-icon>event</mat-icon>
+                <span>{{ job.start }} - {{ job.end }}</span>
+            </aside>
+            <br />
+            <aside class="project" *ngFor="let project of job.projects">
+                <article>
+                    <b>{{ project.name }}</b>
+                </article>
+                <article>{{ project.description }}</article>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- bio -->
+<div class="category">
+    <div class="name">{{ 'SHARED.BIO' | translate }}</div>
+    <div class="content">
+        <p *ngFor="let par of data.bio.paragraphs">{{ par }}</p>
+    </div>
+</div>
+
+<!-- education -->
+<div class="category">
+    <div class="name">{{ 'SHARED.EDUCATION' | translate }}</div>
+    <div class="content">
+        <aside class="icon-list-item" *ngFor="let edu of data.education">
+            <mat-icon>school</mat-icon>
+            <span
+                ><b>{{ edu.faculty }}</b> - {{ edu.description }}</span
+            >
+        </aside>
+    </div>
+</div>
+
+<!-- languages -->
+<div class="category">
+    <div class="name">{{ 'SHARED.LANGUAGES' | translate }}</div>
+    <div class="content">
+        <aside class="icon-list-item" *ngFor="let lang of data.languages">
+            <mat-icon>language</mat-icon>
+            <span>{{ lang }}</span>
+        </aside>
+    </div>
+
+    <!-- skills -->
+    <div class="category">
+        <div class="name">{{ 'SHARED.SKILLS' | translate }}</div>
+        <div class="content">
+            <section class="skill" *ngFor="let skill of data.skills">
+                <span>{{ skill.name }}</span>
+                <mat-slider [value]="skill.expertise" min="1" max="10" disabled></mat-slider>
+            </section>
+        </div>
+    </div>
+</div>

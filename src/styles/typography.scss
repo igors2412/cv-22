@@ -1,0 +1,49 @@
+@use 'colors' as colors;
+
+.title,
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    align-self: center;
+    color: #4b5262;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    color: #6497b1;
+
+    &:visited {
+        color: #6497b1;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.heading, .subheading {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    align-self: center;
+    color: colors.$text-title;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.subheading, .subheading-alt {
+    font-size: 1.2rem;
+}
+
+.subheading-alt {
+    font-weight: 800;
+}

@@ -1,0 +1,18 @@
+$line: lighten(#4b5262, 20%);
+
+.mat-slider.mat-slider-disabled,
+.mat-slider.mat-slider-disabled:hover {
+    .mat-slider-thumb {
+        background-color: rgb(243, 242, 239);
+        width: 32px;
+        height: 32px;
+        border: 4px solid $line;
+        bottom: -15px;
+        right: -17px;
+    }
+
+    .mat-slider-track-background,
+    .mat-slider-track-fill {
+        background-color: $line;
+    }
+}
