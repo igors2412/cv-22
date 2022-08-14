@@ -8,6 +8,7 @@ html {
     }
 }
 
+// TODO: do not load image on mobile
 body {
     font-family: 'Poppins', sans-serif;
     color: rgba($color: #000000, $alpha: 0.7);
@@ -17,4 +18,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     line-height: 1.25;
+
+    @media (max-width: 767px) {
+        background: none;
+    }
 }

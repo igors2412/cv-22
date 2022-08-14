@@ -47,3 +47,5 @@ export interface IEducationStep {
     faculty: string;
     description: string;
 }
+
+export type SupportedLanguage = 'de-DE' | 'en-US';

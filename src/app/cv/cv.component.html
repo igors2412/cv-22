@@ -3,6 +3,12 @@
 <section class="head">
     <article class="title">{{ data.name }}</article>
     <article class="subtitle">{{ data.currentPosition }}</article>
+
+    <div class="actions" *ngIf="">
+        <mat-icon (click)="print()">print</mat-icon>
+        <span [class.selected]="isCurrentLanguage('en-US')" (click)="switchLanguage('en-US')">EN</span>
+        <span [class.selected]="isCurrentLanguage('de-DE')" (click)="switchLanguage('de-DE')">DE</span>
+    </div>
 </section>
 
 <!-- contact -->
@@ -104,15 +110,15 @@
             <span>{{ lang }}</span>
         </aside>
     </div>
+</div>
 
-    <!-- skills -->
-    <div class="category">
-        <div class="name">{{ 'SHARED.SKILLS' | translate }}</div>
-        <div class="content">
-            <section class="skill" *ngFor="let skill of data.skills">
-                <span>{{ skill.name }}</span>
-                <mat-slider [value]="skill.expertise" min="1" max="10" disabled></mat-slider>
-            </section>
-        </div>
+<!-- skills -->
+<div class="category">
+    <div class="name">{{ 'SHARED.SKILLS' | translate }}</div>
+    <div class="content">
+        <section class="skill" *ngFor="let skill of data.skills">
+            <span>{{ skill.name }}</span>
+            <mat-slider [value]="skill.expertise" min="1" max="10" disabled></mat-slider>
+        </section>
     </div>
 </div>

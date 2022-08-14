@@ -38,7 +38,7 @@ export const DATA_DE: ICurriculumVitae = {
         },
         {
             name: 'Relationelle Datenbanken',
-            expertise: 4,
+            expertise: 5,
         },
         {
             name: 'asp.net core/.net core',
@@ -78,7 +78,7 @@ export const DATA_DE: ICurriculumVitae = {
                 {
                     name: 'Team Klara',
                     description:
-                        'Head of Software Development - Führung von einem 12-Köpfigen Dev, PO und Scrum Master Team. Ziele definieren, Projekte ausarbeiten, Wissenstransfer.',
+                        'Head of Software Development - Disziplinarische Führung eines 12-Köpfigen Dev, PO und Scrum Master Teams.',
                 },
                 {
                     name: 'Project Hub',

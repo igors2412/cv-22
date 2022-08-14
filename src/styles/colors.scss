@@ -1,2 +1,6 @@
 $accent: #6497b1;
 $text-title: #4b5262;
+$cv-bgrnd: rgb(243, 242, 239);
+$top-bar: lighten($color: $accent, $amount: 10%);
+$category-head: lighten($color: $accent, $amount: 34%);
+$position-text: darken($color: $accent, $amount: 20%);

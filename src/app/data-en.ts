@@ -3,7 +3,7 @@ import { ICurriculumVitae } from './models';
 export const DATA_EN: ICurriculumVitae = {
     name: 'Igor Schneider',
     currentPosition: 'Head of Software Development',
-    languages: ['Croatian', 'German (C2 level)', 'English (C2 level)'],
+    languages: ['Croatian (native)', 'German (C2 level)', 'English (C2 level)'],
     contact: {
         city: 'Berlin',
         country: 'Germany',
@@ -38,7 +38,7 @@ export const DATA_EN: ICurriculumVitae = {
         },
         {
             name: 'Relational databases',
-            expertise: 4,
+            expertise: 5,
         },
         {
             name: 'asp.net core/.net core',
@@ -55,17 +55,17 @@ export const DATA_EN: ICurriculumVitae = {
     ],
     education: [
         {
-            faculty: 'Technical Gymnasum of Rudjer Boskovic',
-            description: 'Abgeschlossene Ausbildung als Fachinformatiker (2004, Zagreb, Croatia).',
+            faculty: 'Technical school of Ruđer Bošković',
+            description: 'IT technician diploma (2004, Zagreb, Croatia).',
         },
         {
-            faculty: 'Faculty of Science (PMF) of the University of Zagreb',
-            description: 'Enrolled into studies of theoretical physics (2005, Zagreb, Croatia).',
+            faculty: 'Faculty of Science, University of Zagreb',
+            description: '2 semesters of theoretical physics study (2005, Zagreb, Croatia).',
         },
         {
-            faculty: 'Faculty of Electrical Engineering and Computing',
+            faculty: 'University of Zagreb, Faculty of Electrical Engineering and Computing',
             description:
-                'Abschluss als Univ.Bacc.Comp. (Bachelor der Informatik), Modul "Information Processing and Multimedia Systems" (2010, Zagreb, Croatia).',
+                'Univ.Bacc.Comp. (Bachelor of science) diploma, module "Information Processing and Multimedia Systems" (2010, Zagreb, Croatia).',
         },
     ],
     jobs: [
@@ -78,12 +78,12 @@ export const DATA_EN: ICurriculumVitae = {
                 {
                     name: 'Team Klara',
                     description:
-                        'Head of Software Development - Führung von einem 12-Köpfigen Dev, PO und Scrum Master Team. Ziele definieren, Projekte ausarbeiten, Wissenstransfer.',
+                        'Head of Software Development - Leadership of a 12-person team, consisting of developers, product owners and scrum masters.',
                 },
                 {
                     name: 'Project Hub',
                     description:
-                        'Lead Fullstack Engineer - Design (UX) und Entwicklung einer Anwendung angelehnt an Jira für das firmeneigene Projektmanagement (Angular, Angular Material, NestJS).',
+                        'Lead Fullstack Engineer - Design (UX) and development of a company internal project management tool, similar to Jira (Angular, Angular Material, NestJS).',
                 },
             ],
         },
@@ -96,22 +96,22 @@ export const DATA_EN: ICurriculumVitae = {
                 {
                     name: 'Rhenus Material',
                     description:
-                        'Design und Entwicklung eines Company Style Guides basierend auf Google Material (Angular, Angular Material).',
+                        'Design and development of a company-wide style guide based on Google Material (Angular, Angular Material).',
                 },
                 {
                     name: 'Rhenus Fleetmanager',
                     description:
-                        'Design und Entwicklung einer Web Anwendung für das Flottenmanagement im Logistik-Bereich (Angular, Angular Material, asp.net core, MSSQL Azure). ',
+                        'Design and development of a Web application for fleet management in a logistics context (Angular, Angular Material, asp.net core, MSSQL Azure). ',
                 },
                 {
                     name: 'Yellow Line',
                     description:
-                        'Design und Entwicklung einer Web Anwendung für die Lagerverwaltung von Ikea Polen (Angular, Angular Material, asp.net core, MSSQL Azure).',
+                        'Design and development of a Web application for managing large storage units (Angular, Angular Material, asp.net core, MSSQL Azure).',
                 },
                 {
                     name: 'Gate Management',
                     description:
-                        'Design und Entwicklung einer Web Anwendung für die Organisierung von Be- und Entladungen von LKW in großen Lagerhalen (Angular, Angular Material, asp.net core, MSSQL Azure, SignalR).',
+                        'Design and development of a Web application for organizing arrivals and deployment of delivery trucks (Angular, Angular Material, asp.net core, MSSQL Azure, SignalR).',
                 },
             ],
         },
@@ -124,12 +124,12 @@ export const DATA_EN: ICurriculumVitae = {
                 {
                     name: 'Lettings Application',
                     description:
-                        'Design und Entwicklung einer internationalen Web Anwendung für die Vermietung von Wohnungen, Parkplätzen und gewerblichen Objekten. (Angular, Angular Material, Azure Functions, Azure Cosmos DB).',
+                        'Design and development of an international Web application for rentals of apartments, business objects and private parking spaces (Angular, Angular Material, Azure Functions, Azure Cosmos DB).',
                 },
                 {
                     name: 'Shared Component Library',
                     description:
-                        'Design und Entwicklung einer Frontend Library für Shared Web Komponenten (Angular, Angular Material).',
+                        'Design and development of a Frontend Library for shared Web components (Angular, Angular Material).',
                 },
                 {
                     name: 'Akelius Material',
@@ -174,7 +174,7 @@ export const DATA_EN: ICurriculumVitae = {
         {
             company: 'protected-networks.com GmbH',
             end: 'September 2014',
-            start: 'March 2012',
+            start: 'März 2012',
             title: 'Software Developer',
             projects: [
                 {
@@ -191,7 +191,7 @@ export const DATA_EN: ICurriculumVitae = {
         },
         {
             company: 'Smarthouse Media GmbH',
-            end: 'February 2012',
+            end: 'Februar 2012',
             start: 'August 2011',
             title: 'Software Developer',
             projects: [
