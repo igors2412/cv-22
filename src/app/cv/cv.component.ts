@@ -27,5 +27,7 @@ export class CvComponent {
         return this.currentLang === lang;
     }
 
-    print(): void {}
+    print(): void {
+        window.print();
+    }
 }
