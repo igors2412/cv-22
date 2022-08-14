@@ -1,0 +1,14 @@
+{
+    "SHARED": {
+        "ADDRESS": "Adresse",
+        "BIO": "Bio",
+        "CONTACT": "Kontakt",
+        "EDUCATION": "Ausbildung",
+        "ENGLISH": "Englisch",
+        "GERMAN": "Deutsch",
+        "JOBS_PROJECTS": "Jobs & Projekte",
+        "LANGUAGES": "Sprachen",
+        "LINK": "Link",
+        "SKILLS": "Skills"
+    }
+}
